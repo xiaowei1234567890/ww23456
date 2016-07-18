@@ -30,6 +30,12 @@ static NSString * const XMGShopId = @"shop";
     
     // 注册
     [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:XMGShopId];
+    
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(90, 90, 90, 90)];
+    label.text = @"aesrdtfyhjlkxhfcghvbjkn";
+    label.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:label];
 }
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
